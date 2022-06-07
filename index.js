@@ -25,14 +25,17 @@ const fareDoubler = (fare) => {
 };
 
 const fareTripler = (fare) => {
-  let tripler = createFareMultiplier(3);
+    let tripler = createFareMultiplier( 3 );
+    
   return tripler(fare);
 };
 
 function selectDifferentDrivers(drivers, twoDriverFunction) {
   if (twoDriverFunction == returnFirstTwoDrivers) {
     return returnFirstTwoDrivers(drivers);
-  } else if (twoDriverFunction == returnLastTwoDrivers) {
+  }
+  else if ( twoDriverFunction == returnLastTwoDrivers )
+  {
     return returnLastTwoDrivers(drivers);
   }
 }
